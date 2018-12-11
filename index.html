@@ -7,8 +7,7 @@
     <title>Crystal Game!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../unit-4-game/assets/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer type="text/javascript" src="../unit-4-game/assets/game.js"></script>
 
@@ -20,10 +19,13 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <div id="number-to-guess"></div>
                 <div id="crystals">
                 </div>
                 <div id="scoreDisplay"> </div>
-                <div id="current-score"> </div>
+                <div>CURRENT SCORE: <span id="current-score"></span> </div>
+                <div>WINS: <span id="wins-score"></span></div>
+                <div>LOSSES: <span id="losses-score"></span> </div>
             </div>
         </div>
     </div>
