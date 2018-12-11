@@ -81,7 +81,7 @@ initialize = function () {
 initialize();
 
 
-$('.crystalImage').on('click', function (event) {
+$('.crystalImage').on('click', function () {
     console.log(this);
     console.log($(this).val());
     currentScore += $(this).val();
