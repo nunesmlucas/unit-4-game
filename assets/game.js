@@ -58,7 +58,7 @@ initialize = function () {
 
         // Each imageCrystal will be given a data attribute called data-crystalValue.
         // This data attribute will be set equal to the array value.
-        imageCrystal.attr("value", tempArray[i]);
+        imageCrystal.attr("data-crystalValue", tempArray[i]);
         imageCrystal.attr("data-crystalColor", crystalColors[i]);
         imageCrystal.attr("class", "crystalImage");
 
@@ -82,9 +82,11 @@ initialize();
 
 
 $('.crystalImage').on('click', function () {
+    var value = parseInt($("#crystals").attr("data-crystalValue"));
+    console.log(parseInt($("#crystals").attr("data-crystalValue")));
     console.log(this);
-    console.log($(this).val());
-    currentScore += $(this).val();
+    // console.log($(this).val());
+    currentScore += value;
     // display the new number into result box
     $('#current-score').text(currentScore);
     console.log(currentScore);
