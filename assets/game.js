@@ -82,8 +82,8 @@ initialize();
 
 
 $('.crystalImage').on('click', function () {
-    var value = parseInt($("#crystals").attr("data-crystalValue"));
-    console.log(parseInt($("#crystals").attr("data-crystalValue")));
+    var value = parseInt($(this).attr("data-crystalValue"));
+    console.log(parseInt($(this).attr("data-crystalValue")));
     console.log(this);
     // console.log($(this).val());
     currentScore += value;
