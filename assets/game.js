@@ -49,6 +49,7 @@ function initialize() {
     console.log(crystalObj);
     console.log("HERE 1st.");
 
+
     for (var i = 0; i < tempArray.length; i++) {
         console.log("HERE 2nd FOOR LOOP.");
 
@@ -65,12 +66,13 @@ function initialize() {
         // Each imageCrystal will be given a data attribute called data-crystalValue.
         // This data attribute will be set equal to the array value.
         imageCrystal.attr("data-crystalValue", tempArray[i]);
-        imageCrystal.attr("data-crystalColor", crystalColors[i]);
+        // imageCrystal.attr("data-crystalColor", crystalColors[i]);
         imageCrystal.attr("class", "crystalImage");
 
         // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
         $("#crystals").append(imageCrystal);
     }
+
 };
 
 function shuffle(a) {
@@ -83,7 +85,6 @@ function shuffle(a) {
     }
     return a;
 }
-
 
 $("#number-to-guess").text(randomScore);
 
