@@ -5,16 +5,16 @@ var crystalColors = ["blueCrystal", "greenCrystal", "purpleCrystal", "redCrystal
 //Image array:
 var imgArray = new Array();
 imgArray[0] = new Image();
-imgArray[0].src = '../unit-4-game/assets/images/redCrystal.png';
+imgArray[0].src = 'assets/images/redCrystal.png';
 
 imgArray[1] = new Image();
-imgArray[1].src = '../unit-4-game/assets/images/blueCrystal.png';
+imgArray[1].src = 'assets/images/blueCrystal.png';
 
 imgArray[2] = new Image();
-imgArray[2].src = '../unit-4-game/assets/images/greenCrystal.png';
+imgArray[2].src = 'assets/images/greenCrystal.png';
 
 imgArray[3] = new Image();
-imgArray[3].src = '../unit-4-game/assets/images/purpleCrystal.png';
+imgArray[3].src = 'assets/images/purpleCrystal.png';
 
 var currentScore = 0;
 var wins = 0;
@@ -62,6 +62,7 @@ function initialize() {
 
         // Each imageCrystal will be given a src link to the crystal image
         imageCrystal.attr("src", imgArray[i].src);
+        console.log(imgArray[i].src);
 
         // Each imageCrystal will be given a data attribute called data-crystalValue.
         // This data attribute will be set equal to the array value.
@@ -89,7 +90,7 @@ function shuffle(a) {
 $("#number-to-guess").text(randomScore);
 
 
-$('.crystalImage').on('click', function () {
+$('#crystals').on('click','.crystalImage', function (event) {
     var value = parseInt($(this).attr("data-crystalValue"));
     console.log(parseInt($(this).attr("data-crystalValue")));
     console.log(this);
