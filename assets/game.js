@@ -31,10 +31,11 @@ function initialize() {
     console.log("IN INITIALIZE FUNCTION");
 
     $('#crystals').empty();
+    $('#number-to-guess').empty();
 
     currentScore = 0;
 
-    randomScore = Math.floor(Math.random() * 50) + 20;
+    randomScore = Math.floor(Math.random() * 30) + 20;
     console.log(randomScore);
 
     tempArray = shuffle(crystalNumbers);
@@ -72,7 +73,11 @@ function initialize() {
 
         // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
         $("#crystals").append(imageCrystal);
+
+
     }
+    $("#number-to-guess").text(randomScore);
+
 
 };
 
@@ -87,10 +92,7 @@ function shuffle(a) {
     return a;
 }
 
-$("#number-to-guess").text(randomScore);
-
-
-$('#crystals').on('click','.crystalImage', function (event) {
+$('#crystals').on('click', '.crystalImage', function (event) {
     var value = parseInt($(this).attr("data-crystalValue"));
     console.log(parseInt($(this).attr("data-crystalValue")));
     console.log(this);
