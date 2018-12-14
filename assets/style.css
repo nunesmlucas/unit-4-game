@@ -1,0 +1,21 @@
+body{
+    background-image: url(../assets/images/Background.jpg);
+    background-attachment: fixed;
+    background-size: 100% auto;
+    height: 1000px;
+}
+#wins-score{
+    color: green;
+}
+#losses-score{
+    color: red;
+}
+.winloss{
+    float: right;
+    padding-right: 8%;
+}
+.crystalImage{
+    /* width: 20%; */
+    padding: 5px;
+    /* border: 2px; */
+}
