@@ -20,23 +20,28 @@
         <h1>Crystal Game!</h1>
         <div class="row">
             <div class="col">
-                <div>
-                    <h3>Winning number: <span id="number-to-guess"></span></h3>
-                </div>
+
                 <div class="col col-LG-6">
                     <div id="instructions">
                         <h5>Instructions: </h5>
                         <p>You will be given a random number at the start of the game.
                             <br>
+                            <br>
                             There are four crystals below. By clicking on a crystal you will ad a specific amount of
                             points to your total score.
+                            <br>
                             <br>
                             You win the game by match your total score to the random number, you lose the game if your
                             total score goes above the random number.
                             <br>
+                            <br>
                             The value of each crystal is hidden from you until you click on it.
                             <br>
+                            <br>
                             Each time when the game starts, the game will change the values of each crystal. </p>
+                    </div>
+                    <div>
+                        <h3 id="numtoguess">Winning number: <span id="number-to-guess"></span></h3>
                     </div>
                     <div class="row" id="crystals">
                     </div>
@@ -44,6 +49,7 @@
                         <h4>WINS: <span id="wins-score"></span>
                             </br>LOSSES: <span id="losses-score"></span></h4>
                     </div>
+
                     <div>
                         <h3>CURRENT SCORE: <span id="current-score"></span></h3>
                     </div>
