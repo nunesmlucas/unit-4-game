@@ -19,3 +19,8 @@ body{
     padding: 5px;
     /* border: 2px; */
 }
+#instructions{
+    font-style: italic;
+    background-color: beige;
+    padding: 10px;
+}

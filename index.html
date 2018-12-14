@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Game!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../unit-4-game/assets/style.css" />
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <script defer type="text/javascript" src="../unit-4-game/assets/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../unit-4-game/assets/style.css" />
 
 </head>
 
@@ -25,6 +24,20 @@
                     <h3>Winning number: <span id="number-to-guess"></span></h3>
                 </div>
                 <div class="col col-LG-6">
+                    <div id="instructions">
+                        <h5>Instructions: </h5>
+                        <p>You will be given a random number at the start of the game.
+                            <br>
+                            There are four crystals below. By clicking on a crystal you will ad a specific amount of
+                            points to your total score.
+                            <br>
+                            You win the game by match your total score to the random number, you lose the game if your
+                            total score goes above the random number.
+                            <br>
+                            The value of each crystal is hidden from you until you click on it.
+                            <br>
+                            Each time when the game starts, the game will change the values of each crystal. </p>
+                    </div>
                     <div class="row" id="crystals">
                     </div>
                     <div class="winloss">
